@@ -48,9 +48,8 @@
 | Method | Endpoint | Protected | Usage | Response |
 | --- | --- | --- | --- | --- |
 | Post | /login | Yes | Login a user (admin only) | The Users JWT Token |
-| Get | /scraps | Yes | Get a single sword | An Array of Scraps |
-| Post | /scraps/add | Yes | Add a new scrap | The scrap item that has been saved in db read format |
-| Get | /user/:id | Yes | Get the user profile | A users jwt token |
+| Get | /swords | Yes | Get a single sword | A single sword served up from the db |
+| Post | /sword/add | Yes | Add a new sword | The sword item that has been saved in db read format |
 
 ## DB (Server Side)
 
