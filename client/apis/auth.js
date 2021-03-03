@@ -3,7 +3,7 @@ import { baseApiUrl as baseUrl } from '../config'
 
 const errorMessages = {
   "USERNAME_UNAVAILABLE": "Sorry, that username is taken.",
-  "INVALID_CREDENTIALS": "You have entered the incorrect password.",
+  "INVALID_CREDENTIALS": "You have entered an incorrect password.",
 }
 
 export function register (creds) {
