@@ -25,4 +25,9 @@ export function deleteSword(id) {
 }
 
 //API - UPDATE SWORDS
-export function updateSword(id, swords)
+export function updateSword(id, swords) {
+    return request
+        .patch('/api/v1/' + id)
+        .send(swords)
+        .then(res => res.body)
+}
