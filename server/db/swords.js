@@ -10,7 +10,7 @@ function addSwords(db = connection) {
         .select()
 }
 
-function updateScrap(id, newScrapData, db = connection) {
+function updateSword(id, newScrapData, db = connection) {
     return db('swords')
         .where('id', id)
         .update(newScrapData)
@@ -19,12 +19,12 @@ function updateScrap(id, newScrapData, db = connection) {
 function deleteSword(id, db = connection) {
     return db('swords')
     .where('id', id)
-        .del
+        .del()
 }
 
 module.exports = {
     getSwords,
     addSwords,
-    updateScrap,
+    updateSword,
     deleteSword
 }
