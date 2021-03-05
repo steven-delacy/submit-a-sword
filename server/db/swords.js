@@ -5,15 +5,15 @@ function getSwords(db = connection) {
         .select()
 }
 
-function addSwords(db = connection) {
+function addSwords(swords ,db = connection) {
     return db('swords')
-        .select()
+        .insert(swords)
 }
 
-function updateSword(id, newScrapData, db = connection) {
+function updateSword(id, newSwordData, db = connection) {
     return db('swords')
         .where('id', id)
-        .update(newScrapData)
+        .update(newSwordData)
   }
 
 function deleteSword(id, db = connection) {

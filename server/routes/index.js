@@ -13,20 +13,20 @@ router.get("/user/:id", (req, res) => {
 // SWORD - GET ROUTE
 router.get("/", (req, res) => {
     swordsDb.getItemById(req.params.id)
-    .then((sword) => res.json(sword))
+    .then((swords) => res.json(swords))
 })
 
 // SWORD - POST ROUTE
 router.post("/", (req, res) => {
     console.log(req.body)
     swordsDb.addSwords(req.body)
-        .then((sword) => res.json(sword))
+        .then((swords) => res.json(swords))
 })
 
 // SWORD - PATCH ROUTE
 router.patch("/", (req, res) => {
     swordsDb.update(req.params.id, req.body)
-        .then((sword) => res.json(sword))
+        .then((swords) => res.json(swords))
 })
 
 // SWORD - DELETE ROUTE
@@ -34,7 +34,7 @@ router.delete("/:id", (req, res) => {
     const id = Number(req.params.id)
     console.log(id)
     swordsDb.deleteSword(id)
-        .then((scrap) => res.json(scrap))
+        .then((swords) => res.json(swords))
 })
 
 module.exports = router

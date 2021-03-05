@@ -9,7 +9,7 @@ export function getSwords()
     })
 
 //API - ADD SWORDS
-export function addSwords() {
+export function addSwords(swords) {
     console.log(swords)
     return request
         .post("/api/v1")
