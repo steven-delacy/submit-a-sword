@@ -1,7 +1,7 @@
-import {combineReducers} from 'redux'
+import { combineReducers } from 'redux'
 
 import auth from './auth'
-import swords from './swords'
+import swords from './picture'
 export default combineReducers({
   auth,
   swords
