@@ -21,7 +21,7 @@ export function addPicture(pictureDetails) {
 export function deletePicture(id) {
     return {
         type: DELETE_PICTURE,
-        id:
+        id
     }
 }
 

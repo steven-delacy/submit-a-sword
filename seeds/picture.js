@@ -1,12 +1,13 @@
 
 exports.seed = function(knex) {
   // Deletes ALL existing entries
-  return knex('swords').del()
+  return knex('table_name').del()
     .then(function () {
       // Inserts seed entries
-      return knex('swords').insert([
-        {id: 1, sword_name: 'short boi', category: 'dagger', description: 'a knifes a knife', sword_image: ''},
-        
+      return knex('table_name').insert([
+        {id: 1, picture_title: ''},
+        {id: 2, colName: 'rowValue2'},
+        {id: 3, colName: 'rowValue3'}
       ]);
     });
 };

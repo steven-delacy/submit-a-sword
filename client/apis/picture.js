@@ -1,33 +1,33 @@
 //FRONT-END API CALLS
 import request from "superagent";
 
-//API - GET SWORDS
-export function getSwords()
+//API - GET PICTURES
+export function getPicture()
     return request.get("/api/v1")
     .then((res) => {
         return res.body
     })
 
-//API - ADD SWORDS
-export function addSwords(swords) {
-    console.log(swords)
+//API - ADD PICTURES
+export function addPicture(picture) {
+    console.log(picture)
     return request
         .post("/api/v1")
-        .send(swords)
+        .send(picture)
         .then((res) => res.body)
 }
 
-//API - DELETE SWORDS
-export function deleteSword(id) {
+//API - DELETE PICTURES
+export function deletePicture(id) {
     return request
         .delete('/api/v1/' + id)
         .then(res => res.body)
 }
 
-//API - UPDATE SWORDS
-export function updateSword(id, swords) {
+//API - UPDATE PICTURES
+export function updateSword(id, picture) {
     return request
         .patch('/api/v1/' + id)
-        .send(swords)
+        .send(picture)
         .then(res => res.body)
 }
