@@ -1,4 +1,3 @@
-
 exports.up = function(knex) {
     return knex.schema.createTable('picture', table => {
         table.increments('id')
